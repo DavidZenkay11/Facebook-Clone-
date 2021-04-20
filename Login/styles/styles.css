@@ -1,7 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     margin: 0;
     padding: 0;
     background: #f0f2f5;
+    font-family: Helvetica, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body, input, button{
+    font-family: Helvetica, sans-serif;
 }
 
 .container{
@@ -25,4 +37,98 @@ h2{
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     color: #1c1e21;
+    max-width: 500px;
+}
+
+form{
+    padding: 16px 16px 24px 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+form a, input, button{
+    display: block;
+}
+
+input{
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+input[placeholder]{
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+input::placeholder{
+    font-size: 18px;
+    color: #1d2129;
+    opacity: .6;
+}
+
+form a{
+    font-size: 14px;
+    color: #1877f2;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dadde1;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.entrar, .crear-cuenta{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+}
+
+.entrar{
+    font-size: 20px;
+    background: #1877f2;
+    width: 100%;
+}
+
+.entrar:hover{
+    background: #166fe5;
+}
+
+.crear-cuenta{
+    font-size: 17px;
+    background: #42b72a;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.crear-cuenta:hover{
+    background: #36a420;
+}
+
+p, p > a{
+    color: #1c1e21;
+    font-size: 14px;
+    margin: 28px 0 0 0;
+}
+
+p > a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: underline;
 }

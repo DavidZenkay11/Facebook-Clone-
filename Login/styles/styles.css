@@ -100,6 +100,7 @@ form a:hover{
 }
 
 .entrar, .crear-cuenta{
+
     font-weight: bold;
     color: #fff;
     border-radius: 6px;
@@ -117,6 +118,7 @@ form a:hover{
 }
 
 .entrar:hover{
+    text-decoration: none;
     background: #166fe5;
 }
 
@@ -128,6 +130,7 @@ form a:hover{
 }
 
 .crear-cuenta:hover{
+    text-decoration: none;
     background: #36a420;
 }
 
